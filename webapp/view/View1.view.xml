@@ -1,0 +1,18 @@
+<mvc:View controllerName="test001.test001.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List class="sapUiResponsiveMargin" width="auto" items="{/Products}">
+							<items>
+								<ObjectListItem title="{Product}" number="{Price}" numberUnit="$" 
+								numberState="{= ${Price} > 15 ? 'Error' : 'Success' }"/>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
